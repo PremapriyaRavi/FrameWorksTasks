@@ -19,7 +19,7 @@ public class First {
 	private void test4() {
 		System.out.println("test4");
 	}
-	@Test(groups="sanity")
+	@Test(groups= {"sanity","regression"})
 	private void test8() {
 		System.out.println("test8");
 	}

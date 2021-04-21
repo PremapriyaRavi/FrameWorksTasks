@@ -22,39 +22,30 @@ import org.openqa.selenium.support.ui.Select;
 
 public class BaseClass {
 	  public  static WebDriver driver;
-	  
-	  
 	public static void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\PREMA\\eclipse-workspace\\Maven_11AM\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\PREMA\\Downloads\\chromedriver_win32\\chromedriver.exe");
 	    driver=new ChromeDriver();
 	}
 	public static void launchUrl(String s) {
 		driver.get(s);
-	}
-	  
+	}  
 	public static void maximizeWindow() {
 		driver.manage().window().maximize();	
 	}
-	
-	
 	public static void insert(WebElement e,String value) {
 	e.sendKeys(value);	
 	}
-	
 	public static void click(WebElement e) {
 		e.click();
 	}
-	public static void getTitle() {
-		
+	public static void getTitle() {	
 	String title = driver.getTitle();
-    System.out.println(title);
-		    
+    System.out.println(title);	    
 	}
-	public static void getText(WebElement e) {
-		
+	public static void getText(WebElement e) {	
 		String text = e.getText();
 	    System.out.println(text);
-			    
+	    
 		}
 	public static String getCurrentUrl() {
 		String title2 = driver.getCurrentUrl();

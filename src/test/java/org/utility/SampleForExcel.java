@@ -1,7 +1,4 @@
 package org.utility;
-
-
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -25,7 +22,7 @@ public class SampleForExcel {
 	
 	public static Object[][] getData() throws Throwable {
 		String value=null;
-		File loc=new File("C:\\Users\\PREMA\\eclipse-workspace\\Maven_11AM\\ExcelSheets\\FbData.xlsx");
+		File loc=new File("C:\\Users\\PREMA\\eclipse-workspace\\Maven_11AM\\ExcelSheets\\FbTestScenario.xlsx");
 		FileInputStream f=new FileInputStream(loc);
 		Workbook w=new XSSFWorkbook(f);
 		Sheet s = w.getSheet("Sheet1");

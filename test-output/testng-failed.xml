@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="url" value="https://demoqa.com/automation-practice-form"/>
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="org.datadriven.Demo">
+      <class name="org.tasktestng.FaceBook">
         <methods>
-          <include name="test5"/>
+          <include name="test1"/>
+          <include name="test2"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- org.datadriven.Demo -->
+      </class> <!-- org.tasktestng.FaceBook -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.datadriven.RerunFailedTc">
+      <class name="org.tasktestng.FaceBook">
         <methods>
           <include name="test1"/>
-          <include name="test3"/>
           <include name="test2"/>
-          <include name="test5"/>
-          <include name="test4"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- org.datadriven.RerunFailedTc -->
+      </class> <!-- org.tasktestng.FaceBook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

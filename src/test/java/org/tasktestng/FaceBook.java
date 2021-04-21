@@ -1,5 +1,4 @@
 package org.tasktestng;
-
 import java.util.Date;
 
 import org.openqa.selenium.By;
@@ -25,6 +24,8 @@ public class FaceBook extends BaseClass{
 	txtEmail.sendKeys(s1);
 	WebElement txtPass = driver.findElement(By.id("pass"));	
 	txtPass.sendKeys(s2);
+	WebElement btnLogIn = driver.findElement(By.xpath("//button[@type='button']"));
+	btnLogIn.click();
 	}
 	
 	@AfterMethod
@@ -35,3 +36,4 @@ public class FaceBook extends BaseClass{
 	}
 
 }
+
